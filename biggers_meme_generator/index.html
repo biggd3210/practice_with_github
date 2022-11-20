@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="biggersMemeGenerator.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+    </style>
+</head>
+<body>
+    <a>
+        <label id="darkText" for="darkmode">Dark Mode
+        <input type="checkbox" name="darkmode" id="dark">
+        </label>
+    </a>
+    <h1 class="main-block">Let's make some memes!</h1>
+    <form id="new-meme" class="main-block">
+        <input class="memeSetup" id="imageLink" type="text" placeholder="Paste image link here"><br><br>
+        <input class="memeSetup" id="upperText" type="text" placeholder="Enter upper text"><br><br>
+        <input class="memeSetup" id="lowerText" type="text" placeholder="Enter lower text"><br><br>
+        <label for="textColor">Select text color!</label>
+        <input class="memeSetup" id="textColor" name="textColor" type="color"><br><br>
+        <button id="submission" type="submit">Create meme!</button>
+    </form>
+    <div id="meme-list">
+
+    </div>
+
+    <script src="biggersMemeGenerator.js"></script>
+</body>
+</html>
